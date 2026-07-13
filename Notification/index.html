@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-box">
+                <div class="avatar">DU</div>
+                <div class="user-info">
+                    <div class="name">Demo User</div>
+                    <div class="email">demo@webtech.practice</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <nav>
+                <p class="nav-title">DASHBOARD</p>
+                <ul>
+                    <li class="nav-item"><a href="../Overview/index.html">Overview</a></li>
+                    <li class="nav-item"><a href="../ProfileSetting/index.html">Profile Settings</a></li>
+                    <li class="nav-item"><a href="../Security/index.html">Security</a></li>
+                    <li class="nav-item active"><a href="../Notification/index.html">Notification</a></li>
+                </ul>
+                <p class="nav-title">QUICK ACTION</p>
+                <ul>
+                    <li class="nav-item"><a href="../Help&Support/index.html">Help & Support</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-down">
+                <p class="nav-title">ACCOUNT</p>
+                <ul>
+                    <li class="nav-item"><a href="../SignUpPage/index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="web">
+                <a href="../LandingPage/index.html" style="text-decoration:none; color:white; font-size:medium;">
+                    WebTech Practice Dashboard
+                </a>
+            </header>
+
+            <div class="form-card">
+                <h2>Notifications</h2>
+
+                <div class="section-header">
+                    <h3>Notification Preferences</h3>
+                </div>
+                <p class="section-subtitle">Manage how and when you receive notifications about your account activity.
+                </p>
+
+                <div class="pref-grid">
+                    <div class="pref-box">
+                        <h4>Email Notifications</h4>
+                        <p>Receive important updates via email</p>
+                        <label><input type="checkbox" checked> Enable email notifications</label>
+                    </div>
+                    <div class="pref-box">
+                        <h4>Security Alerts</h4>
+                        <p>Get notified about security changes</p>
+                        <label><input type="checkbox" checked> Enable security alerts</label>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h3>Recent Activity</h3>
+                </div>
+                <div class="activity-box">
+                    <input type="checkbox" checked class="activity-check">
+                    <h4>Profile Updated</h4>
+                    <p>Your profile information was successfully updated</p>
+                    <span class="activity-time">Today</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
