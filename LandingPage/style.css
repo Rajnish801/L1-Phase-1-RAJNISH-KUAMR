@@ -1,0 +1,230 @@
+:root {
+    --navy: #062748;
+    --mint: #40e0d0;
+    --light: #f5f7f9;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--light);
+    color: #333;
+}
+
+.navbar,
+.footer {
+    background: var(--navy);
+    color: white;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    background-color: #062748;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #70d6d1;
+    background: transparent;
+    color: white;
+    transition: all 0.3s ease;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.btn-filled {
+    background-color: #70d6d1;
+    color: #0a2540;
+    border: none;
+}
+
+.btn:hover:not(.btn-filled) {
+    background-color: rgba(5, 255, 242, 0.942);
+}
+
+.btn-filled:hover {
+    background-color: #2eefe6;
+}
+
+.hero {
+    display: flex;
+    padding: 60px 8%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.signup {
+    background: transparent;
+    color: #333;
+    border: 1px solid;
+    border-color: #2dd9d0;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border-width: small;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.signup:hover {
+    background-color: #2dd9d0;
+    color: white;
+}
+
+.ghost {
+    background: transparent;
+    color: #333;
+    border: 1px solid;
+    border-color: #2dd9d0;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border-width: small;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ghost:hover {
+    background-color: #2dd9d0;
+    color: white;
+}
+
+.section {
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.desc {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.grid {
+    display: inline-block;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #70d6d1;
+    text-align: center;
+    margin: 15px;
+    width: 750px
+}
+
+.card2 {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #cdf1ec;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0.5px 8px rgba(125, 253, 253, 0.69);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    background-color: #fcfcff;
+    border-radius: 28px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 4px 0px rgba(43, 76, 171, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.slider-content {
+    text-align: left;
+    max-width: 320px;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 48px;
+    background-color: #4cd3c2;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(76, 211, 194, 0.2);
+}
+
+.nav-btn svg {
+    fill: #1a1e29;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+
+.pagination-container {
+    position: absolute;
+    bottom: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dot {
+    height: 12px;
+    border-radius: 6px;
+    background-color: #f1f3f7;
+    transition: all 0.3s ease;
+}
+
+
+.dot.active {
+    width: 30px;
+    background-color: #4cd3c2;
+}
+
+.dot:not(.active) {
+    width: 12px;
+}
+
+.dot.active {
+    background: var(--mint);
+}

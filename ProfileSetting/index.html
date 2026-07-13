@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-box">
+                <div class="avatar">DU</div>
+                <div class="user-info">
+                    <div class="name">Demo User</div>
+                    <div class="email">demo@webtech.practice</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <nav>
+                <p class="nav-title">DASHBOARD</p>
+                <ul>
+                    <li class="nav-item"><a href="../Overview/index.html">Overview</a></li>
+                    <li class="nav-item active"><a href="../ProfileSetting/index.html">Profile Settings</a></li>
+                    <li class="nav-item"><a href="../Security/index.html">Security</a></li>
+                    <li class="nav-item"><a href="../Notification/index.html">Notification</a></li>
+                </ul>
+                <p class="nav-title">QUICK ACTION</p>
+                <ul>
+                    <li class="nav-item"><a href="../Help&Support/index.html">Help & Support</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-down">
+                <p class="nav-title">ACCOUNT</p>
+                <ul>
+                    <li class="nav-item"><a href="../SignUpPage/index.html">Sign out</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="web">
+                <a href="../LandingPage/index.html" style="text-decoration:none; color:white; font-size:medium;">
+                    WebTech Practice Dashboard
+                </a>
+            </header>
+
+            <div class="form-card">
+                <h2>Profile Settings</h2>
+                <form onsubmit="saveData(); return false;">
+                    <h3>Personal Information</h3>
+                    <div class="form-grid">
+                        <div><label>Full Name</label><input type="text" value="Demo User"></div>
+                        <div><label>Date of Birth</label><input type="date"></div>
+                        <div><label>Email Address</label><input type="email" value="demo@gmail.com"></div>
+                        <div><label>Phone Number</label><input type="text" value="+91 9876543210"></div>
+                    </div>
+                    <h3>Address Information</h3>
+                    <div class="form-grid">
+                        <div class="span-2">
+                            <label>Street Address</label>
+                            <textarea class="textbox" placeholder="Enter your complete address"></textarea>
+                        </div>
+                        <div><label>PIN Code</label><input type="text" value="123456"></div>
+                        <div><label>City</label><input type="text" value="Ranchi"></div>
+                        <div><label>Country</label><input type="text" value="India"></div>
+                        <div><label>Github Profile</label><input type="text" value="https://github.com/username"></div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel">Cancel changes</button>
+                        <button type="submit" class="save">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
