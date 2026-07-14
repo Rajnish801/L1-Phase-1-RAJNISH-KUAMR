@@ -185,7 +185,7 @@ header.web {
 }
 
 
-/* --- everything above this line is unchanged from your Notification page CSS --- */
+
 
 .faq-list {
     display: flex;
@@ -222,6 +222,6 @@ header.web {
     color: #555;
 }
 .sidebar-down {
-    margin-top: auto;   /* pushes this block to the bottom of the flex column */
+    margin-top: auto;   
     padding-top: 0;
 }
